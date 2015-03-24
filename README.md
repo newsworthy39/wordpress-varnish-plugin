@@ -6,5 +6,8 @@ to reflect the changes in your blog-environment.
 drop the varnish.php into the plugin-folder in /this/is/my/site/wp-content/plugins, and enable the plugin via
 the administration panel.
 
-# Features
+# features
 Simple installation, drop and forget.
+
+# requires
+varnish, php, apache2, php5-curl, libcurl3, curl
