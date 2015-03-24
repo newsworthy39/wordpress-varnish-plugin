@@ -65,24 +65,4 @@ function varnish_notify($post_id) {
 // Now we set that function up to execute when the admin_notices action is called
 add_action( 'save_post', 'varnish_notify' );
 
-// We need some CSS to position the paragraph
-function varnish_css() {
-	// This makes sure that the positioning is also good for right-to-left languages
-	$x = is_rtl() ? 'left' : 'right';
-
-	echo "
-	<style type='text/css'>
-	#dolly {
-		float: $x;
-		padding-$x: 15px;
-		padding-top: 5px;		
-		margin: 0;
-		font-size: 11px;
-	}
-	</style>
-	";
-}
-
-#add_action( 'admin_head', 'varnish_css' );
-
 ?>
