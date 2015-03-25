@@ -113,7 +113,7 @@ function varnish_plugin_options() {
         </tr>
 
         <tr valign="top">
-        <th scope="row">Varnish HTTP Host-header (Default: <?php echo VARNISH_PLUGIN_DEFAULT_HOST_HEADER; ?></th>
+        <th scope="row">Varnish HTTP Host-header (Default: <?php echo VARNISH_PLUGIN_DEFAULT_HOST_HEADER; ?>)</th>
         <td><input type="text" name="varnish_plugin_hostheader" value="<?php echo esc_attr( get_option('varnish_plugin_hostheader', VARNISH_PLUGIN_DEFAULT_HOST_HEADER) ); ?>" /></td>
         </tr>
          
