@@ -71,7 +71,12 @@ function varnish_notify($post_id) {
 
     $include_list = split(',', get_option('varnish_plugin_include_list', DEFAULT_INCLUDE_LIST));
 
-    $slug_array = array( sprintf('/%s', basename(get_permalink( $post_id ) ) ), '/' );
+    $slug_array = array();
+
+    foreach ($include_list as $listitem) {
+	
+	$slug_array []= sprintf($listitem, basename(get_permalink( $post_id ) ) );
+     }
 
     foreach( $slug_array as $slug ) {
     	 varnish_post_stuff($slug);
