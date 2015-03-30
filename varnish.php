@@ -118,7 +118,7 @@ function varnish_plugin_options() {
         </tr>
          
         <tr valign="top">
-        <th scope="row">Varnish include list. (For each save post, this will also be flushed. Semicolon-delimited, default: <?php echo DEFAULT_INCLUDE_LIST; ?>)</th>
+        <th scope="row">Varnish include list. (For each save post, this will also be flushed. Colon-delimited, default: <?php echo DEFAULT_INCLUDE_LIST; ?>)</th>
         <td><input type="text" name="varnish_plugin_include_list" value="<?php echo esc_attr( get_option('varnish_plugin_include_list',DEFAULT_INCLUDE_LIST) ); ?>" /></td>
         </tr>
 	    </table>
