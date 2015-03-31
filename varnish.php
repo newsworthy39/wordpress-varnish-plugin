@@ -22,7 +22,7 @@ define("VARNISH_PLUGIN_DEFAULT_IP_ADDR","localhost");
 function varnish_post_stuff($slug) {
 
     // Since we're using localhost, according to the purge ACL in varnish. // the host header
-    $hosts = split(',', get_option('varnish_plugin_ipaddr', VARNISH_PLUGIN_DEFAULT_IP_ADDR));
+    $hosts = explode(',', get_option('varnish_plugin_ipaddr', VARNISH_PLUGIN_DEFAULT_IP_ADDR));
 
     foreach($hosts as $host) {
 
