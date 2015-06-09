@@ -69,7 +69,7 @@ function varnish_post_stuff($slug) {
 // you'd like to include in each purge.
 function varnish_notify($post_id) {
 
-    $include_list = split(',', get_option('varnish_plugin_include_list', DEFAULT_INCLUDE_LIST));
+    $include_list = explode(',', get_option('varnish_plugin_include_list', DEFAULT_INCLUDE_LIST));
 
     $slug_array = array();
 
